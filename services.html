@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services</title>
+  <style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f5f5f5;
+      }
+      
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 40px;
+      }
+      
+      h1 {
+        text-align: center;
+        margin: 20px 0;
+      }
+      
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+      }
+      
+      nav ul li {
+        margin-right: 10px;
+      }
+      
+      nav ul li a {
+        text-decoration: none;
+        color: #333;
+        padding: 5px;
+        border-bottom: 2px solid transparent;
+        transition: border-bottom-color 0.3s ease-in-out;
+      }
+      
+      nav ul li a.active,
+      nav ul li a:hover {
+        border-bottom-color: #333;
+      }
+      
+      section#services {
+        padding: 80px 0;
+      }
+      
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+      
+      .service-card {
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease-in-out;
+      }
+      
+      .service-card:hover {
+        transform: translateY(-5px);
+      }
+      
+      .service-card img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+      }
+      
+      .service-card h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      
+      .service-card p {
+        margin-bottom: 20px;
+      }
+      
+      .service-card ul {
+        list-style: disc;
+        margin-bottom: 20px;
+        padding-left: 20px;
+      }
+      
+      .service-card a.btn {
+        display: inline-block;
+        background-color: #333;
+        color: #fff;
+        padding: 8px 16px;
+        text-decoration: none;
+        transition: background-color 0.3s ease-in-out;
+      }
+      
+      .service-card a.btn:hover {
+        background-color: #555;
+      }
+      
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      
+      
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>ACMH Hospital</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        
+        <li><a href="about.html">About</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="services">
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <img src="https://t4.ftcdn.net/jpg/02/60/04/09/240_F_260040900_oO6YW1sHTnKxby4GcjCvtypUCWjnQRg5.jpg" alt="Service 1">
+            <h3>Cardiology</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec est et odio ullamcorper laoreet.</p>
+            <ul>
+                <li>Diagnostic Testing</li>
+                <li>Interventional Procedures</li>
+                <li>Electrophysiology</li>
+              </ul>
+          </div>
+          <div class="service-card">
+            <img src="https://as2.ftcdn.net/v2/jpg/03/20/52/31/1000_F_320523164_tx7Rdd7I2XDTvvKfz2oRuRpKOPE5z0ni.jpg" alt="Service 2">
+            <h3>Orthopedics</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec est et odio ullamcorper laoreet.</p>
+            <ul>
+                <li>Joint Replacement</li>
+                <li>Sports Medicine</li>
+                <li>Orthopedic Rehabilitation</li>
+              </ul>
+          </div>
+          <div class="service-card">
+            <img src="https://as1.ftcdn.net/v2/jpg/00/79/71/30/1000_F_79713072_dWCAZt6wPNFG5PqooCxAGsl4Mza7UfVy.jpg" alt="Service 3">
+            <h3>Oncology</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec est et odio ullamcorper laoreet.</p>
+            <ul>
+                <li>Chemotherapy</li>
+                <li>Radiation Therapy</li>
+                <li>Surgical Oncology</li>
+              </ul>
+          </div>
+          <div class="service-card">
+            <img src="https://as1.ftcdn.net/v2/jpg/01/72/18/66/1000_F_172186647_e93OQdc8KSoBzIPqfKG0UoJSJhR15HLa.jpg" alt="Service 4">
+            <h3>Neurology</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec est et odio ullamcorper laoreet.</p>
+            <ul>
+                <li>Stroke Care</li>
+                <li>Neuro Rehabilitation</li>
+                <li>Neurological Surgery</li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 ACMH Hospital. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

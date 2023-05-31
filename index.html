@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <title>Hospital Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+
+        section {
+            padding: 50px;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateY(100px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        #departments {
+            background-color: #f9f9f9;
+        }
+
+        #departments h2 {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        #departments p {
+            animation: slideIn 1s ease-in-out;
+        }
+
+
+        #doctors {
+            background-color: #eef2f5;
+            padding: 50px;
+            text-align: center;
+        }
+
+        #doctors h2 {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .doctor {
+            margin-bottom: 30px;
+        }
+
+        .doctor img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .doctor h3 {
+            margin-bottom: 5px;
+        }
+
+        .doctor p {
+            color: #666;
+        }
+
+        #patients {
+            background-color: #f9f9f9;
+            padding: 50px;
+        }
+
+        #patients h2 {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .patient-form {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .patient-form td {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .patient-form label {
+            font-weight: bold;
+        }
+
+        .patient-form input,
+        .patient-form select {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .patient-form .submit-cell {
+            text-align: center;
+        }
+
+        .patient-form input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .patient-form input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+
+      
+        #contact {
+            background-color: #eef2f5;
+            padding: 50px;
+        }
+
+        #contact h2 {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .contact-info {
+            margin-bottom: 30px;
+        }
+
+        .contact-info h3 {
+            margin-bottom: 10px;
+        }
+
+        .contact-info p {
+            color: #666;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .social-media {
+            margin-bottom: 20px;
+        }
+
+        .social-media a {
+            color: #fff;
+            font-size: 20px;
+            margin: 0 5px;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .social-media a:hover {
+            color: #aaa;
+        }
+
+        .footer-content p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>ACMH Hospital</h1>
+        <nav>
+            <ul>
+                <li><a href="#departments">Departments</a></li>
+                <li><a href="#doctors">Doctors and Staff</a></li>
+                <li><a href="#patients">Patient Information</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   
+    <section id="departments">
+        <h2>Departments</h2>
+        <div class="container" style="display:flex;     position: relative;
+    ">
+            <div class="card" style="width: 18rem;
+            position: relative;
+            right: 5px;" id="id1">
+                <img src="https://www.heartscope.com.au/wp-content/uploads/2022/12/2.jpg" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h1 class="title">Cardiologist</h1>
+
+                    <p class="card-text">A cardiologist is a physician who's an expert in the care of your heart and
+                        blood vessels</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;
+            position: relative;
+            left: 5px;" id="id2">
+                <img src="https://radarmedical.com/wp-content/uploads/2019/10/why-would-I-be-reffered-to-a-neurologist.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h1 class="title">Neurologist</h1>
+
+                    <p class="card-text">A doctor who specializes in neurology is called a neurologist. The neurologist
+                        treats disorders that affect the brain, spinal cord, and nerves, such as</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;
+            position: relative;
+            left: 15px;" id="id3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmCfDF2UCPIJ7L6q9gcYR3tb_V2c5JMRW6pc7PJVPdEMttyhXf2c45IVlNtYwDT_3GxXY&usqp=CAU"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h1 class="title">Orthopedic</h1>
+
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sequi corporis
+                        eligendi quibusdam ipsum</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;
+            position: relative;
+            left: 25px;" id="id4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY-RmqF-xAHEgZVqGbw4xwKzM9VoCee5S9MKGN-Cdn&s"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h1 class="title">Surgery</h1>
+
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sequi corporis
+                        eligendi</p>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+    </section>
+
+    
+    <section id="doctors">
+        <h2>Doctors and Staff</h2>
+        <div class="doctors" style="    display: flex;
+        position: relative;
+        right: 6px;    justify-content: center;">
+            <div class="doctor" style="    position: relative;
+            right: 20px;">
+                <img src="https://t4.ftcdn.net/jpg/02/60/04/09/240_F_260040900_oO6YW1sHTnKxby4GcjCvtypUCWjnQRg5.jpg"
+                    alt="Doctor Image">
+                <h3>Dr. John Doe</h3>
+                <p>Specialty: Cardiology</p>
+            </div>
+            <div class="doctor" style="    position: relative;
+            left: 20px;">
+                <img src="https://as2.ftcdn.net/v2/jpg/03/20/52/31/1000_F_320523164_tx7Rdd7I2XDTvvKfz2oRuRpKOPE5z0ni.jpg"
+                    alt="Doctor Image">
+                <h3>Dr. Jane Smith</h3>
+                <p>Specialty: Pediatrics</p>
+            </div>
+
+            <div class="doctors" style="    display: flex;
+            position: relative;
+            right: 6px;">
+                <div class="doctor" style="    position: relative;
+                left: 53px;">
+                    <img src="https://as1.ftcdn.net/v2/jpg/00/79/71/30/1000_F_79713072_dWCAZt6wPNFG5PqooCxAGsl4Mza7UfVy.jpg"
+                        alt="Doctor Image">
+                    <h3>Virginia Apgar</h3>
+                    <p>Specialty: Cardiology</p>
+                </div>
+                <div class="doctor" style="    position: relative;
+                        left: 71px;">
+                    <img src="https://as1.ftcdn.net/v2/jpg/01/72/18/66/1000_F_172186647_e93OQdc8KSoBzIPqfKG0UoJSJhR15HLa.jpg"
+                        alt="Doctor Image">
+                    <h3>Rebecca Lee Crumpler</h3>
+                    <p>Specialty: Pediatrics</p>
+                </div>
+            </div>
+
+            <div class="doctor" style="    position: relative;
+            left: 81px;">
+                <img src="https://as1.ftcdn.net/v2/jpg/03/13/77/82/1000_F_313778250_Y0o5can6MA490Nt7G6p03Zfu5fKmWCIv.jpg"
+                    alt="Doctor Image">
+                <h3>Elizabeth Blackwell</h3>
+                <p>Specialty: Pediatrics</p>
+            </div>
+        </div>
+
+
+      
+    </section>
+
+  
+    <section id="patients">
+        <h2>Patient Information</h2>
+
+        <form>
+            <table class="patient-form">
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" id="name" name="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Phone:</label></td>
+                    <td><input type="tel" id="phone" name="phone"></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date of Birth:</label></td>
+                    <td><input type="date" id="dob" name="dob"></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender:</label></td>
+                    <td>
+                        <select id="gender" name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="submit-cell">
+                        <input type="submit" value="Submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </section>
+
+
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+
+        <div class="contact-info">
+            <h3>Address</h3>
+            <p>123 Hospital Street, City, Country</p>
+        </div>
+
+        <div class="contact-info">
+            <h3>Phone</h3>
+            <p>+1 123-456-7890</p>
+        </div>
+
+        <div class="contact-info">
+            <h3>Email</h3>
+            <p>info@example.com</p>
+        </div>
+
+        <div class="contact-info">
+            <h3>Working Hours</h3>
+            <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+            <p>Saturday: 9:00 AM - 1:00 PM</p>
+        </div>
+    </section>
+
+
+ 
+    <footer>
+        <div class="footer-content">
+            <div class="social-media">
+                <a href="https://www.facebook.com/example" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.twitter.com/example" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/example" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/example" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p>&copy; 2023 ACMH Hospital. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
